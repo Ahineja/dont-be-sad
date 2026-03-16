@@ -1,3 +1,7 @@
+## Description
+This project is a web application to cheer yourself up.
+It is built with Next.js and TypeScript, supports English and Ukrainian localization, includes a theme switcher, and incorporates accessibility best practices.
+
 ## Setup
 Make sure to install dependencies:
 

@@ -1,7 +1,6 @@
 export default defineAppConfig({
-  title: 'Ahineia\'s Site',
+  title: 'Don\'t Be Sad Site',
   theme: {
-    // dark: false,
     colors: {
       primary: 'Purple',
       accent: '#FFDF20',
