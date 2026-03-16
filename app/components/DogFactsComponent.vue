@@ -106,12 +106,16 @@ const getHypoallergenicLabel = (isHypoallergenic: boolean): string => {
     <p v-if="breedsErrorMessage" role="alert" class="mb-3 text-red-700">{{ breedsErrorMessage }}</p>
     <p v-if="imageErrorMessage" role="alert" class="mb-3 text-red-700">{{ imageErrorMessage }}</p>
 
-    <figure v-if="randomDogImageUrl" class="mb-8" :aria-label="translate('dogFacts.imageRegionLabel')">
+    <figure
+      v-if="randomDogImageUrl"
+      class="mb-8 text-center"
+      :aria-label="translate('dogFacts.imageRegionLabel')"
+    >
       <figcaption class="mb-2 font-semibold">{{ translate('dogFacts.randomImageTitle') }}</figcaption>
       <img
         :src="randomDogImageUrl"
         :alt="translate('dogFacts.randomImageAlt')"
-        class="max-w-sm rounded"
+        class="max-w-sm rounded mx-auto"
         loading="lazy"
       >
     </figure>
