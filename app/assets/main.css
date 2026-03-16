@@ -17,8 +17,8 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='unicorn'] {
-  --page-background-color: #fef6ff;
-  --page-text-color: #4b1d5b;
+  --page-background-color: #d98ae3;
+  --page-text-color: #3b054e;
 }
 
 body {

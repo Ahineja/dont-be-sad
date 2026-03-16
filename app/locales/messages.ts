@@ -26,7 +26,7 @@ export const localeMessages = {
       greetingWithTitle: 'Greeting from {title}',
       greetingWithoutTitle: 'Greeting, stranger creature',
       placeholderText:
-        'Ultimately, this page is a placeholder to show how to use app config and head management. You can replace it with your own content.',
+        'Ultimately, this page is just a demo of how to use app configuration for now. Currently you can change the page theme, select language, fetch random dog photo 🐕',
       languageSwitcherLabel: 'Language',
       languageToggleLabel: 'Toggle language between English and Ukrainian',
       themeSwitcherLabel: 'Theme',
@@ -80,7 +80,7 @@ export const localeMessages = {
       greetingWithTitle: 'Вітання від {title}',
       greetingWithoutTitle: 'Вітання, незнайома істото',
       placeholderText:
-        'Зрештою, ця сторінка лише показує, як використовувати конфігурацію застосунку та керування head. Ви можете замінити її власним вмістом.',
+        'Зрештою, ця сторінка поки що лише показує, як використовувати конфігурацію застосунку. Наразі Ви можете змінити тему сторінки, обрати мову, підтягнути випадкове фото собаки 🐕',
       languageSwitcherLabel: 'Мова',
       languageToggleLabel: 'Перемкнути мову між англійською та українською',
       themeSwitcherLabel: 'Тема',

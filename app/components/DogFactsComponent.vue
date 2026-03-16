@@ -81,25 +81,27 @@ const getHypoallergenicLabel = (isHypoallergenic: boolean): string => {
   <section :aria-busy="isBreedsLoading || isImageLoading">
     <p v-if="loadingStatusText" class="sr-only" role="status" aria-live="polite">{{ loadingStatusText }}</p>
 
-    <button
-      type="button"
-      class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded mb-4 mr-2"
-      data-test-fetch-breeds
-      :disabled="isBreedsLoading"
-      @click="fetchDogBreeds"
-    >
-      {{ translate('dogFacts.fetchButton') }}
-    </button>
+    <div class="mb-8 flex flex-wrap justify-center gap-2">
+      <button
+        type="button"
+        class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded"
+        data-test-fetch-breeds
+        :disabled="isBreedsLoading"
+        @click="fetchDogBreeds"
+      >
+        {{ translate('dogFacts.fetchButton') }}
+      </button>
 
-    <button
-      type="button"
-      class="bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded mb-8"
-      data-test-refresh-image
-      :disabled="isImageLoading"
-      @click="refreshRandomDogImage"
-    >
-      {{ translate('dogFacts.refreshImageButton') }}
-    </button>
+      <button
+        type="button"
+        class="bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded"
+        data-test-refresh-image
+        :disabled="isImageLoading"
+        @click="refreshRandomDogImage"
+      >
+        {{ translate('dogFacts.refreshImageButton') }}
+      </button>
+    </div>
 
     <p v-if="breedsErrorMessage" role="alert" class="mb-3 text-red-700">{{ breedsErrorMessage }}</p>
     <p v-if="imageErrorMessage" role="alert" class="mb-3 text-red-700">{{ imageErrorMessage }}</p>
