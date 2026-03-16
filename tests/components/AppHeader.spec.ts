@@ -24,7 +24,7 @@ describe('AppHeader', () => {
   it('renders greeting and English locale by default', async () => {
     const wrapper = await mountSuspended(AppHeader)
 
-    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Greeting from Ahineia\'s Site')
+    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Greeting from Don\'t Be Sad Site')
     expect(wrapper.text()).toContain('Language')
     expect(wrapper.text()).toContain('Theme')
     expect(wrapper.get('[data-test-locale-toggle]').attributes('aria-checked')).toBe('false')
@@ -39,7 +39,7 @@ describe('AppHeader', () => {
     await wrapper.get('[data-test-locale-toggle]').trigger('click')
     await wrapper.vm.$nextTick()
 
-    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Вітання від Ahineia\'s Site')
+    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Вітання від Don\'t Be Sad Site')
     expect(wrapper.text()).toContain('Мова')
     expect(wrapper.get('[data-test-locale-toggle]').attributes('aria-checked')).toBe('true')
     expect(wrapper.get('[data-test-locale-current]').text()).toBe('UA')
@@ -53,7 +53,7 @@ describe('AppHeader', () => {
 
     const wrapper = await mountSuspended(AppHeader)
 
-    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Вітання від Ahineia\'s Site')
+    expect(wrapper.get('[data-test-header-greeting]').text()).toContain('Вітання від Don\'t Be Sad Site')
     expect(wrapper.text()).toContain('Мова')
     expect(wrapper.get('[data-test-locale-current]').text()).toBe('UA')
     expect((wrapper.get('[data-test-theme-select]').element as HTMLSelectElement).value).toBe('unicorn')

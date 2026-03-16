@@ -21,8 +21,8 @@ export const localeMessages = {
       no: 'No',
     },
     index: {
-      headTitle: "Ahineia's Site Main Page",
-      headDescription: "This is the main page of Ahineia's site",
+      headTitle: "Don't Be Sad Main Page",
+      headDescription: "This is the main page of Don't Be Sad website",
       greetingWithTitle: 'Greeting from {title}',
       greetingWithoutTitle: 'Greeting, stranger creature',
       placeholderText:
@@ -57,6 +57,9 @@ export const localeMessages = {
       circle: 'Circle',
       square: 'Square',
     },
+    footer: {
+      notice: 'Huge Thanks for free services: dogapi.dog, dog.ceo/api',
+    },
   },
   uk: {
     common: {
@@ -72,8 +75,8 @@ export const localeMessages = {
       no: 'Ні',
     },
     index: {
-      headTitle: "Головна сторінка сайту Ahineia",
-      headDescription: 'Це головна сторінка сайту Ahineia',
+      headTitle: "Головна сторінка сайту Не сумуй",
+      headDescription: 'Це головна сторінка сайту Не сумуй',
       greetingWithTitle: 'Вітання від {title}',
       greetingWithoutTitle: 'Вітання, незнайома істото',
       placeholderText:
@@ -107,6 +110,9 @@ export const localeMessages = {
     ui: {
       circle: 'Кружечок',
       square: 'Квадрат',
+    },
+    footer: {
+      notice: 'Велика подяка за безкоштовні сервіси: dogapi.dog, dog.ceo/api',
     },
   },
 } as const
