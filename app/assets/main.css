@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-sans: 'Anaheim', sans-serif;
+}
+
+:root,
+html[data-theme='light'] {
+  --page-background-color: #ffffff;
+  --page-text-color: #111827;
+}
+
+html[data-theme='dark'] {
+  --page-background-color: #111827;
+  --page-text-color: #f3f4f6;
+}
+
+html[data-theme='unicorn'] {
+  --page-background-color: #fef6ff;
+  --page-text-color: #4b1d5b;
+}
+
+body {
+  @apply font-sans;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}
