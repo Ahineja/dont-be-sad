@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { useTranslate } from '~/composables/useTranslate';
-
 const props = withDefaults(defineProps<{
   width?: string;
 }>(), {
   width: '100px'
 });
-
-const { translate } = useTranslate();
 </script>
 
 <template>
@@ -24,7 +20,7 @@ const { translate } = useTranslate();
         :key="index"
         class="my-2 px-2 rounded-md bg-gray-200 text-emerald-700"
       >
-        {{ translate('ui.circle') }}
+        ⚪️
       </li>
     </ul>
   </div>
